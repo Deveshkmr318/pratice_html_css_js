@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>3x3 Grid (CSS Grid)</title>
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .block {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+
+  <button><a href = "../index.html">HOME</a></button>
+  <div id="highscore"></div>
+  <div id="clicks">clicks : 0 </div>
+  <div class="grid" role="list" aria-label="Nine blocks grid">
+    <div id="1" class="block" role="listitem" onclick="reveal(0)"></div>
+    <div id="2" class="block" role="listitem" onclick="reveal(1)"></div>
+    <div id="3" class="block" role="listitem" onclick="reveal(2)"></div>
+    <div id="4" class="block" role="listitem" onclick="reveal(3)"></div>
+    <div id="5" class="block" role="listitem" onclick="reveal(4)"></div>
+    <div id="6" class="block" role="listitem" onclick="reveal(5)"></div>
+    <div id="7" class="block" role="listitem" onclick="reveal(6)"></div>
+    <div id="8" class="block" role="listitem" onclick="reveal(7)"></div>
+    <div id="9" class="block" role="listitem" onclick="reveal(8)"></div>
+    <div id="10" class="block" role="listitem" onclick="reveal(9)"></div>
+    <div id="11" class="block" role="listitem" onclick="reveal(10)"></div>
+    <div id="12" class="block" role="listitem" onclick="reveal(11)"></div>
+  </div>
+
+  <!-- <button id="reset" onclick="reset()">reset</button> -->
+
+  <script src="./project_4.js"></script>
+</body>
+</html>
